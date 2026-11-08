@@ -3,6 +3,7 @@ on:
     branches: [main]
 concurrency:
   group: deploy-production
+  queue: max
 jobs:
   deploy:
     runs-on: ubuntu-latest
