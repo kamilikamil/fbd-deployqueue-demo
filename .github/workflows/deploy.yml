@@ -1,0 +1,10 @@
+on:
+  push:
+    branches: [main]
+concurrency:
+  group: deploy-production
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60
