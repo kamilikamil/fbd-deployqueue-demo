@@ -4,6 +4,7 @@ on:
 concurrency:
   group: deploy-production
   queue: max
+  cancel-in-progress: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
